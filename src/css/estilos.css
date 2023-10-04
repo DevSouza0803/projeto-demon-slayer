@@ -1,0 +1,97 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background: rgb(15,15,15);
+background: linear-gradient(270deg, rgba(15,15,15,0.8631827731092436) 1%, rgba(74,73,73,0.6334908963585435) 8%, rgba(173,173,173,0) 15%, rgba(255,255,255,0) 27%);
+content: "";
+}
+    
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+main .personagem.selecionado{
+    display: block;
+}
+
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+    
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    margin-bottom: 20px;
+}
+.conteudo .descricao {
+    
+    color: #ffffff;
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 24px;
+}
+.conteudo .logo {
+background-image: url("../imagens/demon-slayer-logo2222.png");
+background-size: cover;
+height: 210px;
+width: 250px;
+margin-bottom: 30px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.botoes .botao {
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%
+}
+
+.botoes .botao img{
+    border-radius: 50%
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #ffffff;
+}
+
+
+
